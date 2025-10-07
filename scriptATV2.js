@@ -4,12 +4,4 @@ const conselhos = [
     "E TAMBÉM TEMOS PÃO DE QUEIJO!!",
     "Ainda dá tempo, se esforce sempre!"
 ];
-const conselhoTexto = document.getElementById('conselhoTexto');
-const novoConselhoBtn = document.getElementById('novoConselhoBtn');
-
-function gerarConselho() {
-    //BUG INTENCIONAL AQUI
-    const indice = Math.floor(Math.random * (conselhos.length + 1));
-    conselhoTexto.textContent = conselhos[indice];
-}
-novoConselhoBtn.addEventListener('click', gerarConselho);
+console.log("Arquivo de script carregado. Array de conselhos pronto.");
